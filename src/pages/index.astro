@@ -1,15 +1,60 @@
 ---
+import "@appwrite.io/pink";
+import "@appwrite.io/pink-icons";
+
+import Header from './Header.jsx';
+import Content from './Content.jsx';
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- HTML Meta Tags -->
+    <title>Almost SSR | Astro</title>
+    <meta
+      name="description"
+      content="Appwrite Loves Astro! Demo application with authorized server-side and client-side rendering."
+    />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://astro.ssr.almostapps.eu/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Almost SSR | Astro" />
+    <meta
+      property="og:description"
+      content="Appwrite Loves Astro! Demo application with authorized server-side and client-side rendering."
+    />
+    <meta
+      property="og:image"
+      content="https://astro.ssr.almostapps.eu/cover.png"
+    />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="astro.ssr.almostapps.eu" />
+    <meta property="twitter:url" content="https://astro.ssr.almostapps.eu/" />
+    <meta name="twitter:title" content="Almost SSR | Astro" />
+    <meta
+      name="twitter:description"
+      content="Appwrite Loves Astro! Demo application with authorized server-side and client-side rendering."
+    />
+    <meta
+      name="twitter:image"
+      content="https://astro.ssr.almostapps.eu/cover.png"
+    />
+
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+  </head>
+  <body class="theme-dark">
+	<div class="grid-with-side">
+		<Header client:load />
+		<Content client:load />
+	</div>
+  </body>
 </html>
