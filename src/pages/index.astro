@@ -12,8 +12,8 @@ const sessionNames = [
 ];
 
 const hash =
-  Astro.cookies.get(sessionNames[0]) ??
-  Astro.cookies.get(sessionNames[1]) ??
+  Astro.cookies.get(sessionNames[0]).value ??
+  Astro.cookies.get(sessionNames[1]).value ??
   "";
 AppwriteService.setSession(hash);
 
