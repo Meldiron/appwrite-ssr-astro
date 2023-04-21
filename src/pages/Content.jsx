@@ -97,7 +97,7 @@ export default function Content(props) {
         <div className="top-cover u-padding-block-end-56">
           <div className="container">
             <div className="u-flex u-gap-16 u-flex-justify-center u-margin-block-start-16">
-              <h1 className="heading-level-1">Appwrite Loves Svelte Kit</h1>
+              <h1 className="heading-level-1">Appwrite Loves Astro</h1>
               <code className="u-un-break-text" />
             </div>
             <p
