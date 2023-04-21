@@ -121,7 +121,7 @@ export default function Content(props) {
               "--grid-item-size-small-screens": "16rem",
             }}
           >
-            <li><Card isCsr={false} account={undefined} /></li>
+            <li><Card isCsr={false} account={props.account} /></li>
             <li><Card isCsr={true} /></li>
           </ul>
         </div>

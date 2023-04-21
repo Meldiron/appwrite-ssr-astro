@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { AppwriteService } from "./AppwriteService";
 
 export default function Card(props) {
-  const [account, setAccount] = useState(props.account ?? undefined);
+  const [account, setAccount] = useState(props.account);
   const isCsr = props.isCsr;
 
   async function fetchAccount() {
@@ -12,7 +12,6 @@ export default function Card(props) {
       setAccount(await AppwriteService.getAccount());
     } catch (err) {
       setAccount(null);
-      account = null;
     }
   }
 
