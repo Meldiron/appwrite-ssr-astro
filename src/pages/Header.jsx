@@ -144,7 +144,7 @@ export default function Header(props) {
                   </a>
                 </li>
                 <li className="drop-list-item">
-                  <a className="drop-button u-cross-center" href="/">
+                  <a className="drop-button u-cross-center" href="https://remix.ssr.almostapps.eu/">
                     <svg
                       role="img"
                       width="16"
@@ -158,7 +158,6 @@ export default function Header(props) {
                       />
                     </svg>
                     <span className="text">Remix</span>
-                    <code className="inline-code">WIP</code>
                   </a>
                 </li>
 
